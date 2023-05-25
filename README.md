@@ -12,7 +12,7 @@ An Android app used to track running activities data
 2) Build the APK by doing Build > Build Bundle(s) / APK (s) > Build APK (s)
 3) Install the APK on an Android phone with a minimum SDK version of 26 (Android 8.0)
 4) Allows app permissions (Automatic and GPS mode will not without location permission, and you can not change or upload photo without camera/storage permision)
-5) Uses the app
+5) Use the app
 
 ## Contributing
 Nam Son Nguyen
