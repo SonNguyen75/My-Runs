@@ -1,0 +1,6 @@
+<paths>
+    <external-path
+        name="ns-path"
+        path="./">
+    </external-path>
+</paths>

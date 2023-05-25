@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="account"
+        android:title="Account Preferences">
+        <PreferenceScreen
+            android:key="userProfile"
+            android:summary="User Profile"
+            android:title="Name, Class, etc" />
+        <CheckBoxPreference
+            android:key="privacy"
+            android:summary="Posting your record anonymously"
+            android:title="Privacy Setting" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="additional"
+        android:title="Additional Settings">
+        <ListPreference
+            android:entries="@array/unitsArrayLabels"
+            android:entryValues="@array/unitsArrayValues"
+            android:key="unitListPreference"
+            android:summary="Select the units"
+            android:title="Unit Preference"
+            android:defaultValue="miles">
+
+        </ListPreference>
+        <EditTextPreference
+            android:key="comments"
+            android:summary="Please add your comments"
+            android:title="Comments"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="misc"
+        android:title="Misc.">
+        <PreferenceScreen
+            android:key="link"
+            android:summary="https://www.sfu.ca/computing.html"
+            android:title="Webpage" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">MyRuns5</string>
+    <string-array name="inputTypesArray">
+        <item>Manual Entry</item>
+        <item>GPS</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="activityTypesArray">
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Standing</item>
+        <item>Cycling</item>
+        <item>Hiking</item>
+        <item>Downhill Skiing</item>
+        <item>Cross-Country Skiing</item>
+        <item>Snowboarding</item>
+        <item>Skating</item>
+        <item>Swimming</item>
+        <item>Mountain Biking</item>
+        <item>Wheelchair</item>
+        <item>Elliptical</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="unitsArrayLabels">
+        <item>Metric (Kilometers)</item>
+        <item>Imperial (Miles)</item>
+    </string-array>
+    <string-array name="unitsArrayValues">
+        <item>kilometers</item>
+        <item>miles</item>
+    </string-array>
+    <string name="profile_photo">Profile Photo:</string>
+    <string name="change_button">Change</string>
+    <string name="name_text_view">Name</string>
+    <string name="your_name">Your Name</string>
+    <string name="phone">Phone</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="class_text">Class</string>
+    <string name="major">Major</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="title_activity_gpsentry">GPSEntryActivity</string>
+    <string name="title_activity_map_entry_screen">MapEntryScreen</string>
+    <string name="title_activity_automatic_entry">AutomaticEntryActivity</string>
+
+</resources>

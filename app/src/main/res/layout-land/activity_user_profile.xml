@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UserProfileActivity">
+
+        <TextView
+            android:id="@+id/profilePhotoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="67dp"
+            android:layout_height="19dp"
+            android:text="@string/name_text_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.062"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profilePhotoTextView"
+            app:layout_constraintVertical_bias="0.208" />
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:text="@string/phone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/phoneEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            app:layout_constraintVertical_bias="0.072" />
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            app:layout_constraintBottom_toTopOf="@+id/classTextView"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/phoneTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.825" />
+
+        <TextView
+            android:id="@+id/classTextView"
+            android:layout_width="67dp"
+            android:layout_height="17dp"
+            android:text="@string/class_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/classEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/genderTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.652" />
+
+        <TextView
+            android:id="@+id/majorTextView"
+            android:layout_width="65dp"
+            android:layout_height="18dp"
+            android:text="@string/major"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/majorEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/classTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.781" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/your_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.221"
+            app:layout_constraintStart_toEndOf="@+id/nameTextView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.238" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/your_phone_number"
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+            app:layout_constraintEnd_toEndOf="@+id/nameEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/classEditText"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="eg. 2012"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/majorEditText"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/majorEditText"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:hint="Your Major"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/classEditText"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/classEditText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.809" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/classEditText"
+            app:layout_constraintEnd_toEndOf="@+id/phoneEditText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/phoneEditText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <RadioButton
+                android:id="@+id/femaleButton"
+                android:layout_width="196dp"
+                android:layout_height="52dp"
+                android:checked="false"
+                android:text="@string/female" />
+
+            <RadioButton
+                android:id="@+id/maleButton"
+                android:layout_width="152dp"
+                android:layout_height="52dp"
+                android:text="@string/male" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/changeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_button"
+            android:onClick="onChangeButtonClick"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onSaveButtonClick"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cancelButton"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="@+id/majorEditText" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="onCancelButtonClick"
+            android:text="@string/cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/majorEditText" />
+
+        <ImageView
+            android:id="@+id/profileImgView"
+            android:layout_width="72dp"
+            android:layout_height="73dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.026" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
